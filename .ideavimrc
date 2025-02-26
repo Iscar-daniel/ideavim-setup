@@ -1,0 +1,23 @@
+Plug peekaboo
+Plug which-key
+Plug easymotion-vim-easymotion
+
+source .vimrc
+" disable the timeout option
+let mapleader = " "
+ map <leader>ff <action>(GotoFile)
+ map <leader>fg <action>(Find)
+ map <leader>fh <action>(FindMenuGroup)
+ map <leader>fg <action>(Find)
+ map <leader>fv <action>(FindInPath)
+map <leader>cc <action> EditorCopy
+map <leader>cv <action> EditorPaste
+ map <leader>fg <action>(FindUsages)
+set notimeout
+let g:WhichKeyDesc_leader = "<leader>x Open file explorer"
+
+set which-key
+set notimeout
+
+" increase the timeoutlen (default: 1000), don't add space around the equal sign
+set timeoutlen=5000
